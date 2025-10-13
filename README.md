@@ -42,3 +42,11 @@ tau_asymmetry: (model1: MRI)
 4.	**Prediction**: Load the desired model (.pkl) and apply it to new participants to generate predictions.
 5.	**Evaluation and visualization**: We have included an example Jupyter notebook (eval_example.ipynb) that can be used to demonstrate prediction and inference with simulated data (including model performance with MAE and R² metrics and visualization of predicted vs. observed values through Matplotlib scatterplots).
 
+## Dependencies
+
+  - python=3.9
+  - pandas=1.4.4
+  - scikit-learn=1.1.2
+  - numpy=1.23.3
+  - matplotlib=3.5.3
+
