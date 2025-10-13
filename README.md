@@ -24,9 +24,13 @@ Input files should be in tabular format (e.g., csv) and include clinical, plasma
 2. Plasma variables: numeric (p-tau217, p-tau181, p-tau231, NTA, GFAP, NfL).
 3. MRI: numeric (FreeSurfer-derived volumes, surface areas, thickness, in total 247 variables)
  
-Input variables for each model have been saved as a separate .pkl file. Missing values or columns can be imputed using a trained KNN imputer (n_neighbors = 5) that is included for each model, though this should be applied cautiously, especially when a large proportion of data is missing.
+Input variables for each model have been saved as a separate .pkl file. Missing values or columns can be imputed using a trained KNN imputer (n_neighbors = 5) that is included for each model, though this should be applied cautiously, especially when a large proportion of data is missing. 
  
 The model output is a continuous numeric variable representing the predicted tau-PET Braak I–IV load or laterality index. The output is saved as an additional column in the original tabular data frame and saved as a .csv file.
+
+**Directory navigation**
+tau_load (model1: clinical, model 2: plasma, model 3: MRI, model4: clinical+plasma, model5: clinical+MRI, model6: plasma+MRI, model7: clinical+plasma+MRI.
+tau_asymmetry: (model1: MRI)
 
 ## Typical workflow
 
