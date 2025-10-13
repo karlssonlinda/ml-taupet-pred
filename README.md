@@ -12,9 +12,9 @@ The models are trained on data from BioFINDER-2 data and use three predefined in
   1. Tau-PET Braak I–IV load
   2. Tau-PET Braak I–IV asymmetry (laterality index)
  
-For tau load, models were trained on all possible combinations of the three input blocks (seven models in total). Users can select the model corresponding to the input data available. The combined model (clinical + plasma + MRI) achieved the best performance, primarily driven by the plasma features. However, because plasma biomarkers are not always available, we also share all alternative models for flexibility.
+For tau load, models were trained on all possible combinations of the three input blocks (seven models in total). Users can select the model corresponding to the input data available. The combined model (clinical + plasma + MRI, tau_load/model7) achieved the best performance, primarily driven by the plasma features. However, because plasma biomarkers are not always available, we also share all alternative models for flexibility (tau_load/model1-model6).
  
-For asymmetry, only the MRI-based model is shared, since MRI variables were the only meaningful predictors, adding other features did not improve performance. Note that the laterality index has only been trained on tau-positive individuals which is the recommended use population during prediction of this composite.
+For asymmetry, only the MRI-based model (tau_asymmetry/model1) is shared, since MRI variables were the only meaningful predictors, adding other features did not improve performance. Note that the laterality index has only been trained on tau-positive individuals which is the recommended use population during prediction of this composite.
 
  **Input variables**
  
