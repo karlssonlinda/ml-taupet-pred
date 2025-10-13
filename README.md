@@ -31,6 +31,7 @@ The model output is a continuous numeric variable representing the predicted tau
 **Directory navigation**
 
 tau_load (model1: clinical, model 2: plasma, model 3: MRI, model4: clinical+plasma, model5: clinical+MRI, model6: plasma+MRI, model7: clinical+plasma+MRI.
+
 tau_asymmetry: (model1: MRI)
 
 ## Typical workflow
