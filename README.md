@@ -29,6 +29,7 @@ Input variables for each model have been saved as a separate .pkl file. Missing 
 The model output is a continuous numeric variable representing the predicted tau-PET Braak I–IV load or laterality index. The output is saved as an additional column in the original tabular data frame and saved as a .csv file.
 
 **Directory navigation**
+
 tau_load (model1: clinical, model 2: plasma, model 3: MRI, model4: clinical+plasma, model5: clinical+MRI, model6: plasma+MRI, model7: clinical+plasma+MRI.
 tau_asymmetry: (model1: MRI)
 
