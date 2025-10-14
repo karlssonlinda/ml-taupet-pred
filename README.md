@@ -40,7 +40,7 @@ tau_asymmetry: (model1: MRI)
 2.	**QC and curation**: Harmonize variable names with the provided input list. Handle missing data via the paired KNN imputer if necessary.
 3.	**Preprocessing**: No manual scaling required, z-score standardization (fitted on training data) is integrated within the model pipeline.
 4.	**Prediction**: Load the desired model (.pkl) and apply it to new participants to generate predictions.
-5.	**Evaluation and visualization**: We have included an example Jupyter notebook (eval_example.ipynb) that can be used to demonstrate prediction and inference with simulated data (including model performance with MAE and R² metrics and visualization of predicted vs. observed values through Matplotlib scatterplots, but note that performance is very low with this data based on random noise).
+5.	**Evaluation and visualization**: We have included an example Jupyter notebook (eval_example.ipynb) that can be used to demonstrate prediction and inference with simulated data (including model performance with MAE and R² metrics and visualization of predicted vs. observed values through Matplotlib scatterplots, but note that performance is very low with this dataset as it is based on random noise).
 
 ## Dependencies
 
