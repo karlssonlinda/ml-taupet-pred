@@ -18,7 +18,7 @@ For asymmetry, only the MRI-based model (tau_asymmetry/model1) is shared, since 
 
  **Input variables**
  
-Input files should be in tabular format (e.g., csv) and include clinical, plasma and/or MRI variables as columns. See an example dataframe with simulated data (df_simulated.csv) and try the models on it using the notebook eval_example.ipynb.
+Input files should be in tabular format (e.g., csv) and include clinical, plasma and/or MRI variables as columns. See an example dataframe with simulated data (df_simulated.csv) and try the models on it using the notebook eval_example.ipynb. Note that this data is randomly sampled from normal distributions of variables in appropriate ranges, so it will show very low performance on the tasks.
 
 1. Clinical variables: numeric (age [years], sex [0=male, 1=female], education [years], mmse score, 10 word recall score, number of APOE ε2 alleles, number of APOE ε4 alleles).
 2. Plasma variables: numeric (p-tau217, p-tau181, p-tau231, NTA, GFAP, NfL).
@@ -40,7 +40,7 @@ tau_asymmetry: (model1: MRI)
 2.	**QC and curation**: Harmonize variable names with the provided input list. Handle missing data via the paired KNN imputer if necessary.
 3.	**Preprocessing**: No manual scaling required, z-score standardization (fitted on training data) is integrated within the model pipeline.
 4.	**Prediction**: Load the desired model (.pkl) and apply it to new participants to generate predictions.
-5.	**Evaluation and visualization**: We have included an example Jupyter notebook (eval_example.ipynb) that can be used to demonstrate prediction and inference with simulated data (including model performance with MAE and R² metrics and visualization of predicted vs. observed values through Matplotlib scatterplots).
+5.	**Evaluation and visualization**: We have included an example Jupyter notebook (eval_example.ipynb) that can be used to demonstrate prediction and inference with simulated data (including model performance with MAE and R² metrics and visualization of predicted vs. observed values through Matplotlib scatterplots, but note that performance is very low with this data based on random noise).
 
 ## Dependencies
 
