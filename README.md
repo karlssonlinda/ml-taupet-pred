@@ -49,4 +49,5 @@ tau_asymmetry: (model1: MRI)
   - scikit-learn=1.1.2
   - numpy=1.23.3
   - matplotlib=3.5.3
+  - catboost=1.1.1
 
